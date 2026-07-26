@@ -16,13 +16,11 @@ public class Calculator {
             System.out.println(MathLib.subtract(arr.get(0), arr.get(1)));
         }
         else if(input.contains("*")) {
-        List<Integer> arr = Arrays.stream(input.split("[*]")).map(String::trim).map(Integer::parseInt).collect(Collectors.toList());
-
+            List<Integer> arr = Arrays.stream(input.split("[*]")).map(String::trim).map(Integer::parseInt).collect(Collectors.toList());
             System.out.println(MathLib.mul(arr.get(0), arr.get(1)));
         }
         else if(input.contains("/")) {
-        List<Integer> arr = Arrays.stream(input.split("[/]")).map(String::trim).map(Integer::parseInt).collect(Collectors.toList());
-
+            List<Integer> arr = Arrays.stream(input.split("[/]")).map(String::trim).map(Integer::parseInt).collect(Collectors.toList());
             System.out.println(MathLib.div(arr.get(0), arr.get(1)));
         } else {
             System.out.println("Unsupported operator");
